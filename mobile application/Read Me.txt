@@ -1,0 +1,15 @@
+--------------------------------------------------
+FINGER PRINT MANAGMENT SYSTEM (MOBILE APPLICATION)
+--------------------------------------------------
+this mobile application realeases can run in both android and ios
+
+devolopment framework : react-native ( node.js )
+ ---------------------------------------------------------------------
+mobile application team :
+
+mohammed ashraf ahmed elwardany
+ali elsayed ghandour
+
+
+------------------
+thanks

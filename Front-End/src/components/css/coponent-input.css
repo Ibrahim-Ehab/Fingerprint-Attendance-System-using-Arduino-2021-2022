@@ -1,0 +1,127 @@
+.group {
+    position: relative;
+
+}
+.Form-Data textarea {
+    resize: none;
+}
+.Form-Data input, textarea {
+    background: #fcf7ff;
+    transition: background .5s ease;
+    color: #3c434a;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 17vw;
+    border: none;
+    border-radius: .2rem;
+    border: 1px solid #cfcfd3ea;
+    font-size: medium;
+}
+.Form-Data input:focus, textarea:focus {
+    outline: none;
+    background: #f5f0ff;
+}
+.Form-Data input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: #0a6fc2;
+}
+
+.Form-Data input:not(:focus):not(:placeholder-shown):invalid ~ label, textarea:not(:focus):not(:placeholder-shown):invalid ~ label, input:not(:focus):not(:placeholder-shown):invalid ~ label, textarea:not(:focus):not(:placeholder-shown):invalid ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: #f3212d;
+}
+
+
+.Form-Data input:focus ~ .bar:before, textarea:focus ~ .bar:before {
+    width: 17vw;
+}
+
+.Text-Form .Form-Data input:focus ~ .bar:before, textarea:focus ~ .bar:before {
+    width: 37.5vw;
+}
+.Form-Data input[type="password"] {
+    letter-spacing: 0.3em;
+}
+.Form-Data label {
+    color: #3c434a;
+    font-size: 11px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+}
+.Form-Data .bar {
+    position: relative;
+    display: block;
+    width: 20vw;
+}
+.Form-Data .bar:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #2196f3;
+    transition: 300ms ease all;
+    left: 0%;
+}
+.Form-Data .btn {
+    background: #fff;
+    color: #959595;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.Form-Data .btn:hover {
+    color: #8b8b8b;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+.Form-Data .btn.btn-link {
+    background: #2196f3;
+    color: #d3eafd;
+}
+.Form-Data .btn.btn-link:hover {
+    background: #0d8aee;
+    color: #deeffd;
+}
+.Form-Data .btn.btn-submit {
+    background: #2196f3;
+    color: #bce0fb;
+}
+.Form-Data .btn.btn-submit:hover {
+    background: #0d8aee;
+    color: #deeffd;
+}
+.Form-Data .btn.btn-cancel {
+    background: #eee;
+}
+.Form-Data .btn.btn-cancel:hover {
+    background: #e1e1e1;
+    color: #8b8b8b;
+}
+.Form-Data .btn-box {
+    text-align: center;
+    margin: 50px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

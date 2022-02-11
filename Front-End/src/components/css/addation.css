@@ -1,0 +1,134 @@
+.link-hover {
+    color: #bdb8d7;
+    transition: color .3s;
+}
+
+.wrapper .sidebar .social_media a:hover:nth-child(1) .link-hover { 
+    color: #4267B2;
+}
+
+.wrapper .sidebar .social_media a:hover:nth-child(2) .link-hover {
+    color: #c4302b;
+}
+
+.wrapper .sidebar .social_media a:hover:nth-child(3) .link-hover {
+    color: #bc2a8d;
+}
+
+.Form-Data {
+    /* background-color: #D36581; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* top Update Size of Employee Info */
+.main-div > div > div {  
+ margin: 14px 14px;
+} 
+
+.Form-Submit {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20%;
+}
+
+.Form_Container {
+    /* background-color: #f2edf5; */
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 25vh ;
+    padding: 14px;
+    border: transparent solid 1px;
+    border-top: #4b4276 solid 2px;
+    /* border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-radius: 1.5rem; */
+    box-shadow: 5px 10px 15px #D6D7E5;
+}
+.Form_Container > div {
+    padding: 10px 0px ;
+}
+
+.Input_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+}
+
+.label_conatiner > p{
+    padding: 14px 0px;
+    font-size: small;
+    font-weight: 400;
+}
+
+.label_conatiner > h2{
+    padding: 6px 0px;
+    font-weight: 600;
+}
+
+.employee-part > div {
+    height: fit-content;
+}
+
+.Form-btn {
+    top: 10px;
+    display: block;
+	width: 12rem;
+	height: 35px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #4b4276, #4b4276, #4b4276);
+	background-size: 200%;
+	font-size: 1rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	/* margin: 1rem 0; */
+    text-align: center;
+    text-justify: auto;
+	cursor: pointer;
+	transition: .5s;
+}
+
+/* Waiting Form Data */
+/* .Waiting-form {
+
+} */
+
+.py-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem;
+    padding-top: 5rem;
+}
+
+.py-2 .Form-Submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+/* //////////////////////// */
+.Register-form {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

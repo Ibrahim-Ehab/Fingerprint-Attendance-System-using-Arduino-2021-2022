@@ -1,0 +1,13 @@
+first install postgres
+create database called flask
+open app.py file and replace app.config[url] with url of postgres
+install all dependencies using the following command "pip install -r ./requirements.txt"
+run app.py using the following command "python3 app.py"
+now you can send requests for the api on host "http://127.0.0.1:10000"
+the database will be automatically created thanks to sqlalchemy schema creator
+/////////files archeticture//////
+there are three main folders 
+1-models: these are the database table representation in an class form
+2-dao: these are repositories or services for encapsulating the process of communicating with databse
+3-routes are responsible for listening for any request and then communicate with dao's files to manibulate/fetch data then sends appropriate response to user
+

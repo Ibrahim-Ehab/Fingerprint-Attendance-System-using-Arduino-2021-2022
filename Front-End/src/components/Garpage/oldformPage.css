@@ -1,0 +1,50 @@
+.Form-Data {
+    padding-top: 30px;
+}
+
+/* .Form-Data form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+} */
+
+.Form-Data p {
+    font-size: 12px;
+    padding-top: 2.5vh;
+    color: #787c82;
+}
+
+.Form-Data > div {
+    display: grid;
+    padding-bottom: 2vh;
+    grid-template-columns: 1fr 1.5fr;
+    grid-auto-rows: 30vh;
+    border-bottom: #dcdcde solid 2px;
+    grid-column-gap: 3rem;
+}
+
+
+.Personal_info {
+    padding-top: 40px;
+    padding-bottom: 3.5rem !important;
+}
+
+.inputs-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+/* .Security_part .inputs-part {
+    align-self: center;
+} */
+
+.description-part {
+    align-self: start;
+}
+
+.Illus-imge {
+    position: absolute;
+    top: 40%;
+    right: 0;
+}

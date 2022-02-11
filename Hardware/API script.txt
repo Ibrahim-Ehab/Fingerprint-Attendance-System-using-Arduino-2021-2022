@@ -1,0 +1,55 @@
+#Python code for connecting Arduino with API
+
+from flask import  request
+import requests
+import serial
+import time
+import schedule
+
+arduino = serial.Serial('com4', 9600)
+print('Established serial connection to Arduino')
+def main_func():
+    arduino_data = arduino.readline()
+    print(arduino_data)
+    if(len(str(arduino_data))>12):
+        if(str(arduino_data)[12:15].isdigit()):
+            id = str(arduino_data)[12:15]
+        elif(str(arduino_data)[12:14].isdigit()):
+            id = str(arduino_data)[12:14]
+        else:
+            id=str(arduino_data)[12]
+        print(id)
+        if(id.isdigit()):
+           if(int((id))>0 and int((id))<301):
+             requests.post('https://attendence123.herokuapp.com/employee/{}/attend'.format(id))
+    #decoded_values = str(arduino_data[0:len(arduino_data)].decode("utf-8"))
+    #list_values = decoded_values.split('x')
+
+#    for item in list_values:
+#        list_in_floats.append(float(item))
+
+#   print(f'Collected readings from Arduino: {list_in_floats}')
+
+    arduino_data = 0
+   # list_in_floats.clear()
+  #  list_values.clear()
+
+
+
+# ----------------------------------------Main Code------------------------------------
+# Declare variables to be used
+list_values = []
+list_in_floats = []
+
+print('Program started')
+
+# Setting up the Arduino
+schedule.every(.1).seconds.do(main_func)
+#arduino.close()
+#print('Connection closed')
+#print('<----------------------------->')
+while True:
+    schedule.run_pending()
+    #time.sleep(1)
+
+input('Press ENTER to exit')

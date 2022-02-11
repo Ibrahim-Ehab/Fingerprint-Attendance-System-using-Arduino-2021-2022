@@ -1,0 +1,7 @@
+export * from "./UpHeader"
+export * from "./InputComp"
+export * from "./Separate"
+export * from "./StatusDetails"
+export * from "./ListItem"
+export * from "./StatusBox"
+export * from "./radioComp"

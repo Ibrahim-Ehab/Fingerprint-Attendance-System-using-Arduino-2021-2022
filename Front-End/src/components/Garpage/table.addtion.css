@@ -1,0 +1,47 @@
+
+.expand-data {
+    /*background-color:lightblue ;*/
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 0;
+}
+
+
+.Expandable {
+    display: none;
+   /*line-height: 0;*/
+   width: 9rem;
+   text-align: start;
+   overflow: hidden;
+   transition: all .5 ease-in-out;
+} 
+
+/*
+.Expandable:hover {
+    line-height: 1.5;
+}*/
+
+.Expand {
+    height: 0px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+}
+
+.Click_ME {
+    cursor: pointer;
+}
+
+.Expand_open  {
+    height: 100px;
+    background-color: aqua;
+}
+
+.Expandcontainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.DisplayExpand_data {
+   display: none;
+   height: 0px;
+}
